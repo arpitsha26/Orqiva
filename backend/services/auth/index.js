@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import connectDb from "./config/db.js";
 import router from "./routes/auth.route.js";
 
+
 dotenv.config();
 
 const port = process.env.PORT || 5000;
