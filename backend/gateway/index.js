@@ -5,14 +5,15 @@ import cors from "cors";
 
 dotenv.config();
 
-const port= process.env.PORT;
+const port= process.env.PORT ;
 
 
 const app=express();
-app.use(cors({
-    origin:process.env.FRONTEND_URL,
-    credentials:true}
-))
+app.use(cors());
+// app.use(cors({
+//     origin:process.env.FRONTEND_URL,
+//     credentials:true}
+// ))
 
 app.use("/auth",proxy(process.env.AUTH_SERVICE))
 
