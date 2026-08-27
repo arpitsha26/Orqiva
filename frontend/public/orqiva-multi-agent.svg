@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 620" fill="none">
+<defs>
+<radialGradient id="bg" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#EFF6FF"/><stop offset=".65" stop-color="#F8FAFC"/><stop offset="1" stop-color="#fff"/></radialGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-opacity=".13"/></filter>
+<filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<circle cx="310" cy="310" r="300" fill="url(#bg)"/>
+<circle cx="310" cy="310" r="235" stroke="#DBEAFE" stroke-width="2" stroke-dasharray="5 10"><animateTransform attributeName="transform" type="rotate" from="0 310 310" to="360 310 310" dur="22s" repeatCount="indefinite"/></circle>
+<ellipse cx="310" cy="310" rx="190" ry="105" stroke="#BFDBFE" stroke-width="2" opacity=".7"><animateTransform attributeName="transform" type="rotate" from="0 310 310" to="-360 310 310" dur="15s" repeatCount="indefinite"/></ellipse>
+<g stroke="#93C5FD" stroke-width="2" opacity=".5"><path d="M310 310 130 175"/><path d="M310 310 490 175"/><path d="M310 310 110 395"/><path d="M310 310 505 405"/></g>
+
+<g filter="url(#shadow)">
+<g><circle cx="130" cy="175" r="48" fill="#fff" stroke="#BFDBFE" stroke-width="2"/><circle cx="130" cy="175" r="30" fill="#10B981"/><circle cx="119" cy="170" r="4" fill="#fff"/><circle cx="141" cy="170" r="4" fill="#fff"/><path d="M119 185Q130 194 141 185" stroke="#fff" stroke-width="3" stroke-linecap="round"/><animateTransform attributeName="transform" type="translate" values="0 0;0 -9;0 0;0 7;0 0" dur="4.5s" repeatCount="indefinite"/></g>
+<g><circle cx="490" cy="175" r="48" fill="#fff" stroke="#C4B5FD" stroke-width="2"/><circle cx="490" cy="175" r="30" fill="#8B5CF6"/><circle cx="479" cy="170" r="4" fill="#fff"/><circle cx="501" cy="170" r="4" fill="#fff"/><path d="M479 185Q490 194 501 185" stroke="#fff" stroke-width="3" stroke-linecap="round"/><animateTransform attributeName="transform" type="translate" values="0 7;0 0;0 -8;0 0;0 7" dur="5s" repeatCount="indefinite"/></g>
+<g><circle cx="110" cy="395" r="48" fill="#fff" stroke="#A5F3FC" stroke-width="2"/><circle cx="110" cy="395" r="30" fill="#06B6D4"/><circle cx="99" cy="390" r="4" fill="#fff"/><circle cx="121" cy="390" r="4" fill="#fff"/><path d="M99 405Q110 414 121 405" stroke="#fff" stroke-width="3" stroke-linecap="round"/><animateTransform attributeName="transform" type="translate" values="0 0;0 8;0 0;0 -7;0 0" dur="5.2s" repeatCount="indefinite"/></g>
+<g><circle cx="505" cy="405" r="48" fill="#fff" stroke="#FDE68A" stroke-width="2"/><circle cx="505" cy="405" r="30" fill="#F59E0B"/><circle cx="494" cy="400" r="4" fill="#fff"/><circle cx="516" cy="400" r="4" fill="#fff"/><path d="M494 415Q505 424 516 415" stroke="#fff" stroke-width="3" stroke-linecap="round"/><animateTransform attributeName="transform" type="translate" values="0 -7;0 0;0 8;0 0;0 -7" dur="4.8s" repeatCount="indefinite"/></g>
+</g>
+
+<g filter="url(#shadow)">
+<ellipse cx="310" cy="520" rx="115" ry="20" fill="#BFDBFE" opacity=".55"><animate attributeName="rx" values="95;125;95" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".3;.65;.3" dur="3s" repeatCount="indefinite"/></ellipse>
+<rect x="214" y="185" width="192" height="260" rx="78" fill="#fff" stroke="#DBEAFE" stroke-width="3"/>
+<circle cx="310" cy="150" r="12" fill="#2563EB" filter="url(#glow)"><animate attributeName="cy" values="150;138;150" dur="2s" repeatCount="indefinite"/></circle>
+<path d="M310 162V185" stroke="#60A5FA" stroke-width="4"/>
+<rect x="246" y="245" width="128" height="90" rx="42" fill="#0F172A"/>
+<circle cx="286" cy="287" r="9" fill="#38BDF8" filter="url(#glow)"><animate attributeName="cy" values="284;291;284" dur="1.8s" repeatCount="indefinite"/></circle>
+<circle cx="334" cy="287" r="9" fill="#38BDF8" filter="url(#glow)"><animate attributeName="cy" values="291;284;291" dur="1.8s" repeatCount="indefinite"/></circle>
+<path d="M282 307Q310 327 338 307" stroke="#38BDF8" stroke-width="6" stroke-linecap="round"/>
+<circle cx="310" cy="380" r="32" fill="#EFF6FF"/>
+<image href="/orqiva-icon.svg" x="285" y="355" width="50" height="50"/>
+</g>
+
+<g opacity=".9" font-family="Inter,Arial,sans-serif" font-size="13" fill="#334155" text-anchor="middle">
+<rect x="64" y="285" width="105" height="42" rx="15" fill="#fff" stroke="#DBEAFE"/><text x="116" y="311">Research</text>
+<rect x="451" y="275" width="105" height="42" rx="15" fill="#fff" stroke="#DBEAFE"/><text x="503" y="301">Analysis</text>
+<rect x="244" y="78" width="132" height="42" rx="15" fill="#fff" stroke="#DBEAFE"/><text x="310" y="104">Orchestrate</text>
+</g>
+</svg>

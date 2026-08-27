@@ -1,0 +1,17 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="orqivaAccent" x1="100" y1="270" x2="390" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <path d="M180 54 C104 54 48 110 48 180 C48 250 104 306 180 306 C258 306 312 250 312 180 C312 110 258 54 180 54Z M180 100 C229 100 266 135 266 180 C266 225 229 260 180 260 C131 260 94 225 94 180 C94 135 131 100 180 100Z" fill="#111827" fill-rule="evenodd"/>
+  <path d="M202 216 C228 216 246 229 268 251 L310 293 C321 304 321 321 310 332 C299 343 282 343 271 332 L227 288 C210 271 193 260 172 260 L202 216Z" fill="url(#orqivaAccent)"/>
+  <circle cx="180" cy="180" r="12" fill="#2563EB"/>
+  <line x1="360" y1="82" x2="360" y2="278" stroke="#E5E7EB" stroke-width="2"/>
+  <text x="410" y="207" font-family="Inter, SF Pro Display, Helvetica, Arial, sans-serif" font-size="112" font-weight="600" letter-spacing="-5" fill="#111827">Orqiv</text>
+  <text x="742" y="207" font-family="Inter, SF Pro Display, Helvetica, Arial, sans-serif" font-size="112" font-weight="600" letter-spacing="-5" fill="url(#orqivaAccent)">a</text>
+  <text x="414" y="250" font-family="Inter, SF Pro Display, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" letter-spacing="6" fill="#6B7280">MULTI-AGENT AI WORKSPACE</text>
+  <rect x="414" y="274" width="74" height="3" rx="1.5" fill="#2563EB"/>
+  <rect x="496" y="274" width="38" height="3" rx="1.5" fill="#7C3AED"/>
+</svg>

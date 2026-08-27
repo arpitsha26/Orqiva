@@ -1,0 +1,12 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="orqivaAccent" x1="110" y1="390" x2="410" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <path d="M256 72 C154 72 76 150 76 256 C76 362 154 440 256 440 C362 440 436 362 436 256 C436 154 362 72 256 72Z M256 132 C327 132 376 184 376 256 C376 328 327 380 256 380 C184 380 136 328 136 256 C136 184 184 132 256 132Z" fill="#111827" fill-rule="evenodd"/>
+  <path d="M292 304 C326 304 350 322 378 350 L430 402 C444 416 444 438 430 450 C416 462 394 462 380 448 L326 394 C303 371 282 358 254 358 L292 304Z" fill="url(#orqivaAccent)"/>
+  <circle cx="256" cy="256" r="18" fill="#2563EB"/>
+  <circle cx="256" cy="256" r="42" stroke="#2563EB" stroke-width="3" stroke-dasharray="4 8" opacity="0.45"/>
+</svg>

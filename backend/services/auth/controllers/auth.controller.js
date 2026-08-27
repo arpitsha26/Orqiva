@@ -35,6 +35,9 @@ export const login=async(req,res)=>{
             avatar:user.avatar
         }),"EX",7*24*60*60)
 
+     
+
+
         res.cookie("session", sessionId,{
                    httpOnly:true,
                    secure:false,     //after deplpy isko true kr dena h
