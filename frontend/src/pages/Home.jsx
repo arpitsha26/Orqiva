@@ -48,10 +48,10 @@ function Home() {
       ${dark ? "bg-[#090B10] text-white" : "bg-white text-slate-900"}
     `}
   >
-    {/* HEADER — ALWAYS SHOW */}
+ 
     <header className="absolute left-0 right-0 top-0 z-30 flex items-center justify-between px-6 py-6 sm:px-8 lg:px-10">
 
-      {/* Logo */}
+      
       <img
         src="/orqiva-full-logo.svg"
         alt="Orqiva AI"
@@ -62,7 +62,7 @@ function Home() {
         `}
       />
 
-      {/* Theme Toggle — ALWAYS SHOW */}
+      
       <button
         type="button"
         onClick={() => setDark((value) => !value)}
@@ -82,7 +82,7 @@ function Home() {
       </button>
     </header>
 
-    {/* USER LOGGED IN */}
+    
     {userData ? (
       <div
         className={`
@@ -92,7 +92,7 @@ function Home() {
       />
     ) : (
       <>
-        {/* Background */}
+       
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <div
             className={`
@@ -121,7 +121,7 @@ function Home() {
           />
         </div>
 
-        {/* LOGIN PAGE */}
+        
         <section className="relative z-10 flex h-screen items-center px-6 pt-16 sm:px-10 lg:px-16">
           <div className="mx-auto grid w-full max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-20">
 
@@ -142,7 +142,7 @@ function Home() {
                 `}
               >
 
-                {/* Logo + Heading */}
+               
                 <div className="flex items-center gap-4">
                   <img
                     src="/orqiva-icon.svg"
@@ -169,7 +169,7 @@ function Home() {
                   </div>
                 </div>
 
-                {/* Divider */}
+               
                 <div className="my-8 flex items-center gap-3">
                   <div
                     className={`
@@ -195,7 +195,7 @@ function Home() {
                   />
                 </div>
 
-                {/* Google Login */}
+                
                 <button
                   type="button"
                   onClick={googleLogin}
@@ -232,7 +232,7 @@ function Home() {
               </div>
             </div>
 
-            {/* RIGHT — MULTI AGENT SVG */}
+            
             <div className="hidden h-[560px] items-center justify-center lg:flex">
               <img
                 src="/orqiva-multi-agent.svg"
