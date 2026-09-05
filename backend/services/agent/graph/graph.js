@@ -41,7 +41,7 @@ workflow.addConditionalEdges("router",(state)=>{
     
     
     default:
-        "chat";
+       return "chat";
    }
 },{
     chat:"chat",
