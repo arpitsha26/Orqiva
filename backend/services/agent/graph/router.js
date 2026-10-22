@@ -1,45 +1,67 @@
-import { getModel } from "../config/llmmodel.js"
+import { getModel } from "../config/llmModels.js"
+import { agent } from "../controllers/agent.controller.js"
 
-export const router=async(state)=>{
+export const router = async (state) => {
 
-const llm= await getModel("router")
+  if (state.agent && state.agent !== "auto") {
+    return {
+      ...state,
+      agent: state.agent
+    }
+  }
 
-const prompt=`You are an agent router.
+  if(state.file){
+if(state.file.mimetype==="application/pdf"){
+    return {
+      ...state,
+      agent:"pdfRag"
+    }
+  }
+
+    if(state.file.mimetype.startsWith("image/")){
+    return {
+      ...state,
+      agent:"imageAnalyzer"
+    }
+  }
+  }
+
+  
+
+
+  const llm = await getModel("router")
+  const prompt = `You are an agent router.
 
 Available agents:
--chat
--search
--coding
--pdf
--ppt
--vision
+
+- chat
+- search
+- coding
+- pdf
+- ppt
+- vision 
 
 Rules:
 
 chat:
 General conversation,
-explantions,
+explanations,
 learning,
 questions.
 
 search:
 Current events,
-latest inforamtion,
-news,recent developments,
+latest information,
+news,
+recent developments,
 internet lookup.
 
 coding:
-Generate Code,
+Generate code,
 debug code,
 build projects,
 architecture,
-Api design.
-
-vision:
-Generate image,
-Create image.
-
-
+API design.
 
 pdf:
 Questions about generate PDFs
@@ -49,27 +71,32 @@ ppt:
 Questions about generate ppts
 or ppt context.
 
+vision:
+  Generate image,
+  create image
+
 Return ONLY one word:
 
-chat 
+chat
 search
 coding
 pdf
+ppt
 vision
 
 User Query:
-${state.prompt}
-
+ ${state.prompt}
 `
 
-const response=await llm.invoke(prompt)
-console.log(response)
+  const response = await llm.invoke(prompt)
 
-return {
+  return {
     ...state,
-    agent:response.content.trim().toLowerCase()
+    agent: response.content
+      .trim()
+      .toLowerCase()
+  }
+
+
+
 }
-
-
-}
-

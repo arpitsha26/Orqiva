@@ -5,6 +5,9 @@ import api from "../../utils/axios";
 import { FcGoogle } from "react-icons/fc";
 import { useDispatch, useSelector } from "react-redux";
 import { setUserData } from "../redux/userSlice";
+import SideBar from "../components/SideBar";
+import ChatArea from "../components/ChatArea";
+import Artifact from "../components/Artifact";
 
 function Home() {
   
@@ -48,8 +51,9 @@ function Home() {
       ${dark ? "bg-[#090B10] text-white" : "bg-white text-slate-900"}
     `}
   >
- 
-    <header className="absolute left-0 right-0 top-0 z-30 flex items-center justify-between px-6 py-6 sm:px-8 lg:px-10">
+   
+   
+    {/* <header className="absolute left-0 right-0 top-0 z-30 flex items-center justify-between px-6 py-6 sm:px-8 lg:px-10">
 
       
       <img
@@ -80,8 +84,26 @@ function Home() {
       >
         {dark ? "☾" : "☀"}
       </button>
-    </header>
 
+      
+    </header> */}
+
+    <SideBar/>
+   <ChatArea/>
+   <Artifact/>
+
+ 
+   
+   
+
+   
+   
+   
+
+
+
+
+   {/* Agr user login nhi h tb  */}
     
     {userData ? (
       <div
@@ -125,7 +147,7 @@ function Home() {
         <section className="relative z-10 flex h-screen items-center px-6 pt-16 sm:px-10 lg:px-16">
           <div className="mx-auto grid w-full max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-20">
 
-            {/* LEFT — LOGIN */}
+            
             <div className="flex justify-center lg:justify-start">
               <div
                 className={`
@@ -249,7 +271,15 @@ function Home() {
         </section>
       </>
     )}
+
+   <SideBar/>
+   <ChatArea/>
+   <Artifact/>
+
   </main>
+
+  
+  
 );
 }
 
