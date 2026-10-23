@@ -1,6 +1,5 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import "@lottiefiles/dotlottie-web";
 import './index.css'
 
 import {Provider} from "react-redux"
