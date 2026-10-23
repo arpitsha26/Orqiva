@@ -1,0 +1,57 @@
+
+
+:root {
+  --br-bg: #f7f4ec;
+  --br-panel: #fffdf7;
+  --br-ink: #171717;
+}
+
+
+#root,
+#root main,
+.flex-1.flex.flex-col.min-w-0 {
+  background-color: var(--br-bg);
+  color: var(--br-ink);
+}
+
+.flex-1.overflow-y-auto {
+  position: relative;
+  background-color: var(--br-bg) !important;
+  color: var(--br-ink) !important;
+}
+
+/* Assistant messages have no filled bubble, so explicitly set readable text. */
+.break-words.overflow-hidden {
+  color: var(--br-ink) !important;
+  background-color: transparent;
+}
+
+/* Keep user messages readable if a Tailwind gradient class is still present. */
+.break-words.overflow-hidden.bg-gradient-to-br,
+.break-words.overflow-hidden[class*="from-indigo-"] {
+  background: var(--br-accent, #f5e642) !important;
+  color: var(--br-ink) !important;
+}
+
+/* Do not force all overlays to be black; only apply this when an overlay is open.
+   These rules preserve the expected modal/backdrop behavior. */
+.fixed.inset-0.bg-black\/50,
+.fixed.inset-0.bg-black\/60,
+.fixed.inset-0.bg-black\/80 {
+  pointer-events: auto;
+}
+
+/* Markdown content and inline code must remain readable on the paper surface. */
+.break-words.overflow-hidden p,
+.break-words.overflow-hidden li,
+.break-words.overflow-hidden h1,
+.break-words.overflow-hidden h2,
+.break-words.overflow-hidden h3,
+.break-words.overflow-hidden blockquote {
+  color: var(--br-ink) !important;
+}
+.break-words.overflow-hidden code:not([class*="language-"]) {
+  background: #e9e4d8 !important;
+  color: #171717 !important;
+  border: 1px solid #171717;
+}

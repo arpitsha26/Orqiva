@@ -1,0 +1,229 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --br-bg: #f7f4ec;
+  --br-panel: #fffdf7;
+  --br-ink: #171717;
+  --br-muted: #5e5a52;
+  --br-line: #171717;
+  --br-accent: #f5e642;
+  --br-pink: #ff8fc7;
+  --br-blue: #9be7ff;
+  --br-green: #b9f18c;
+  --br-shadow: 5px 5px 0 #171717;
+  --br-shadow-small: 3px 3px 0 #171717;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+body {
+  background: var(--br-bg) !important;
+  color: var(--br-ink) !important;
+  font-family: 'Space Grotesk', system-ui, sans-serif !important;
+}
+button, input, textarea, select {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease, background-color .12s ease, color .12s ease !important;
+}
+button:active {
+  transform: translate(2px, 2px) !important;
+  box-shadow: 1px 1px 0 var(--br-ink) !important;
+}
+
+/* App surfaces: replace the existing dark surfaces with paper */
+.bg-\[\#0d0f14\], .bg-\[\#0f1117\], .bg-\[\#111318\], .bg-\[\#0d1117\] {
+  background: var(--br-bg) !important;
+  color: var(--br-ink) !important;
+}
+.bg-white\/\[0\.03\], .bg-white\/\[0\.04\], .bg-white\/\[0\.05\],
+.bg-white\/\[0\.06\], .bg-white\/\[0\.07\], .bg-white\/\[0\.08\],
+.bg-white\/10, .bg-white\/5 {
+  background: #fffdf7 !important;
+}
+[class*="border-white/"], [class*="border-white\\/"] {
+  border-color: var(--br-line) !important;
+}
+.border-white\/\[0\.06\], .border-white\/\[0\.07\], .border-white\/10,
+.border-white\/\[0\.08\] {
+  border-color: var(--br-line) !important;
+}
+
+/* Brutalist text palette */
+.text-white, .text-slate-100, .text-slate-200, .text-slate-300,
+.text-slate-400, .text-slate-500, .text-slate-600 {
+  color: var(--br-ink) !important;
+}
+.text-indigo-400, .text-indigo-300, .text-violet-400 {
+  color: #171717 !important;
+}
+.text-yellow-400 { color: #171717 !important; }
+
+/* Remove gradients and glass effects; use flat high-contrast blocks */
+.bg-gradient-to-br, .bg-gradient-to-r, .bg-linear-to-br, .bg-linear-to-r,
+[class*="from-indigo-"], [class*="to-violet-"] {
+  background-image: none !important;
+  background-color: var(--br-accent) !important;
+  color: var(--br-ink) !important;
+}
+.backdrop-blur-sm, .backdrop-blur {
+  backdrop-filter: none !important;
+}
+.shadow-2xl, .shadow-lg, [class*="shadow-\\["] {
+  box-shadow: var(--br-shadow) !important;
+}
+
+/* Buttons and interactive controls */
+button {
+  border: 2px solid var(--br-ink) !important;
+  border-radius: 0 !important;
+  font-weight: 700 !important;
+}
+button:hover:not(:disabled) {
+  box-shadow: var(--br-shadow-small) !important;
+  transform: translate(-1px, -1px);
+}
+button:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+button.bg-indigo-600, button.bg-indigo-500, button.bg-violet-700,
+button[class*="bg-linear"], button[class*="from-indigo-"] {
+  background: var(--br-accent) !important;
+  color: var(--br-ink) !important;
+}
+button[class*="text-slate-"] {
+  color: var(--br-ink) !important;
+}
+button[class*="rounded-"] {
+  border-radius: 0 !important;
+}
+
+/* Inputs */
+textarea, input:not([type="file"]), select {
+  background: var(--br-panel) !important;
+  color: var(--br-ink) !important;
+  border: 2px solid var(--br-ink) !important;
+  border-radius: 0 !important;
+  outline: none;
+}
+textarea::placeholder, input::placeholder {
+  color: #777168 !important;
+}
+textarea:focus, input:focus, select:focus {
+  box-shadow: 4px 4px 0 var(--br-accent) !important;
+  border-color: var(--br-ink) !important;
+}
+
+/* Message composer */
+textarea {
+  padding: 12px !important;
+  line-height: 1.55 !important;
+}
+textarea + div button, .cursor-pointer {
+  -webkit-tap-highlight-color: transparent;
+}
+.rounded-2xl, .rounded-xl, .rounded-lg, .rounded-md, .rounded-full,
+.rounded-\[10px\], .rounded-\[7px\] {
+  border-radius: 0 !important;
+}
+
+/* Chat messages */
+.bg-gradient-to-br.from-indigo-500, .bg-gradient-to-br {
+  background: var(--br-accent) !important;
+  color: var(--br-ink) !important;
+}
+.leading-relaxed {
+  line-height: 1.65 !important;
+}
+a {
+  color: #004b9b !important;
+  text-decoration-thickness: 2px !important;
+}
+table, th, td {
+  border-color: var(--br-ink) !important;
+}
+th {
+  background: var(--br-accent) !important;
+  color: var(--br-ink) !important;
+}
+
+/* Sidebar and navigation */
+.border-r, .border-l, .border-b, .border-t {
+  border-color: var(--br-ink) !important;
+}
+[class*="tracking-widest"] {
+  letter-spacing: .12em !important;
+  text-transform: uppercase;
+}
+[class*="text-[10px]"], [class*="text-[10.5px]"], [class*="text-[11px]"] {
+  font-family: 'DM Mono', monospace !important;
+}
+
+/* Selected navigation / agent states */
+.bg-indigo-500\/10, .bg-indigo-500\/15, .bg-indigo-500\/\[0\.18\] {
+  background: var(--br-accent) !important;
+  color: var(--br-ink) !important;
+}
+.border-indigo-500\/20, .border-indigo-500\/\[0\.18\], .border-indigo-500\/25 {
+  border-color: var(--br-ink) !important;
+}
+
+/* Billing drawer and modal surfaces */
+.fixed.inset-0.bg-black, .bg-black\/50, .bg-black\/60, .bg-black\/80 {
+  background: rgba(23, 23, 23, .55) !important;
+}
+.fixed.right-0.top-0, .fixed.inset-y-0.right-0 {
+  background: var(--br-bg) !important;
+  border: 2px solid var(--br-ink) !important;
+  box-shadow: -6px 0 0 var(--br-ink) !important;
+}
+[class*="rounded-xl"][class*="border"], [class*="rounded-2xl"][class*="border"] {
+  border: 2px solid var(--br-ink) !important;
+}
+
+/* File tabs */
+button[class*="border-r"][class*="whitespace-nowrap"] {
+  border-right: 2px solid var(--br-ink) !important;
+}
+button[class*="text-indigo-400"] {
+  background: var(--br-accent) !important;
+  color: var(--br-ink) !important;
+}
+
+/* Preview/editor */
+iframe[title="preview"] {
+  border: 2px solid var(--br-ink);
+}
+.monaco-editor, .monaco-editor .margin, .monaco-editor-background {
+  /* Keep code editor legible; its own dark theme is intentional. */
+  border-radius: 0 !important;
+}
+
+/* Image previews and lightbox */
+img {
+  border-radius: 0 !important;
+}
+.fixed.inset-0.z-50.bg-black\/80 {
+  background: rgba(23, 23, 23, .9) !important;
+}
+
+/* Scrollbars */
+* {
+  scrollbar-color: #171717 #e9e4d8;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
