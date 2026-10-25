@@ -12,13 +12,15 @@ app.use(express.json())
 app.use("/",router)
 
 app.use((err,req,res,next)=>{
-  console.log(err)
+  console.error(err)
 
-  if(err.status){
-    return res.status(err.status).json(err.data)
-  }
+  const status = Number.isInteger(err.status) && err.status >= 400 && err.status < 600
+    ? err.status
+    : 500
 
-  return res.status(500).json({message:`agent error ${error}`})
+  return res.status(status).json(
+    err.data || { message: err.message || "Unexpected agent service error" }
+  )
 })
 
 

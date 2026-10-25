@@ -187,7 +187,16 @@ REDIS_URL="redis://localhost:6379"
 PORT=8001
 MONGO_URI=<your-mongodb-connection-string>
 REDIS_URL="redis://localhost:6379"
+FIREBASE_PROJECT_ID=<your-firebase-project-id>
+FIREBASE_CLIENT_EMAIL=<your-service-account-client-email>
+FIREBASE_PRIVATE_KEY="<your-service-account-private-key>"
 ```
+
+Set these Firebase service-account values in the auth service's environment
+when deploying. Store the private key with `\n` in place of line breaks (and
+keep it quoted where your environment provider requires it); the auth service
+converts those escaped newlines when it initializes Firebase Admin. Do not
+commit the private key or a service-account JSON file.
 </details>
 
 <details>
