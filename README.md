@@ -390,5 +390,5 @@ ISC
 ---
 
 <p align="center">
-  <b>Built with ◇ by the Orqiva team</b>
+  <b> In production (Arpit Sharma) ... Deployed soon.....</b>
 </p>
