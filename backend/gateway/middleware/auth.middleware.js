@@ -8,7 +8,13 @@ const protect=async (req,res,next) => {
         }
         const session=await redis.get(`session-${sessionId}`)
         if(!session){
-            res.clearCookie("session")
+            const isProduction = process.env.NODE_ENV === "production"
+            res.clearCookie("session", {
+                httpOnly: true,
+                secure: isProduction,
+                sameSite: isProduction ? "none" : "lax",
+                path: "/"
+            })
             return res.status(401).json({message:"session expired"})
         }
         req.user=JSON.parse(session)
