@@ -1,4 +1,4 @@
-import redis from "../../../shared/redis/redis.js"
+import redis from "./redis.js"
 import { getMessages } from "../utils/getMessages.js"
 export const getMemory=async (conversationId)=>{
     const key=`messages-${conversationId}`

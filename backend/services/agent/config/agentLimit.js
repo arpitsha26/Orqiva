@@ -1,4 +1,4 @@
-import redis from "../../../shared/redis/redis.js"
+import redis from "./redis.js"
 
 const Limits = {
     chat: 20,
