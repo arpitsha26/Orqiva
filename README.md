@@ -26,6 +26,49 @@
 
 ---
 
+## 🖼 Screenshots
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <b>🔐 Login</b><br/>
+      <img src="./screenshots/login.png" alt="Login" width="100%" />
+    </td>
+    <td align="center" width="50%">
+      <b>💬 Chat</b><br/>
+      <img src="./screenshots/chat.png" alt="Chat" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <b>🔍 Search Agent</b><br/>
+      <img src="./screenshots/search.png" alt="Search Agent" width="100%" />
+    </td>
+    <td align="center" width="50%">
+      <b>💻 Coding Agent</b><br/>
+      <img src="./screenshots/coding.png" alt="Coding Agent" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <b>🎨 Vision Agent</b><br/>
+      <img src="./screenshots/vision.png" alt="Vision Agent" width="100%" />
+    </td>
+    <td align="center" width="50%">
+      <b>💳 Billing Dashboard</b><br/>
+      <img src="./screenshots/billing_dashboard.png" alt="Billing Dashboard" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <b>💰 Razorpay Payment</b><br/>
+      <img src="./screenshots/razorpay.png" alt="Razorpay" width="50%" />
+    </td>
+  </tr>
+</table>
+
+---
+
 ## 🏗 Architecture
 
 ```
